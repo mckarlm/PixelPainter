@@ -1,37 +1,38 @@
 body {
   background-color: bisque;
 }
-/*
-//for the secondary grid (color palette)//
-.colorgrid{
 
+h1 {
+  text-align: center;
 }
-*/
-#pixelPainter {
+
+.paletteDiv {
+  margin: 80;
+  height: 20px;
+  outline: 2px solid black;
+}
+
+.canvasDiv {
 	position: relative;
-	top: 30px;
+  top: 30px;
 	outline:2px solid black;
-	font-size: 0;
-	margin:auto;
-	height:500px;
-	width:500px;
+	margin: auto;
+	height:400px;
+	width:400px;
 	padding: 0;
-	border: none;
 }
 
-.cell {
+.canvas {
   height: 50px;
   width: 50px;
-	margin:0;
-	padding:0;
-	border:none;
+	margin: 0;
 	outline:1px solid black;
-  display:inline-block;
-  background-color: white
+  display: inline-block;
+  background-color: white;
 }
 
-@media (max-width: 501px) {
-  .cell {
+@media (max-width: 510px) {
+  .canvas {
     height: 20px;
     width: 20px;
   }
