@@ -2,31 +2,15 @@ body {
   background-color: bisque;
 }
 /*
-.cell{
-  width: 20px;
-  height: 20px;
-  border: solid 1px blue;
-  background-color: blueviolet;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
+//for the secondary grid (color palette)//
+.colorgrid{
 
-.row{
-  width: 20px;
-  height: 20px;
-  border: solid 1px red;
-  background-color: yellow;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
 }
 */
-
 #pixelPainter {
 	position: relative;
 	top: 30px;
-	outline:2px solid #000;
+	outline:2px solid black;
 	font-size: 0;
 	margin:auto;
 	height:500px;
@@ -35,13 +19,24 @@ body {
 	border: none;
 }
 
-.row, .cell {
+.cell {
   height: 50px;
   width: 50px;
 	margin:0;
 	padding:0;
 	border:none;
-	outline:1px solid #000;
+	outline:1px solid black;
   display:inline-block;
   background-color: white
+}
+
+@media (max-width: 501px) {
+  .cell {
+    height: 20px;
+    width: 20px;
+  }
+  #pixelPainter {
+    height: 200px;
+    width: 200px;
+  }
 }
