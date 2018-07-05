@@ -1,0 +1,47 @@
+body {
+  background-color: bisque;
+}
+/*
+.cell{
+  width: 20px;
+  height: 20px;
+  border: solid 1px blue;
+  background-color: blueviolet;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.row{
+  width: 20px;
+  height: 20px;
+  border: solid 1px red;
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+*/
+
+#pixelPainter {
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	margin:auto;
+	height:500px;
+	width:500px;
+	padding: 0;
+	border: none;
+}
+
+.row, .cell {
+  height: 50px;
+  width: 50px;
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid #000;
+  display:inline-block;
+  background-color: white
+}
