@@ -7,9 +7,23 @@ h1 {
 }
 
 .paletteDiv {
-  margin: 80;
+  height: 220px;
+  width: 220px;
+  margin-top: 100;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid black 2px;
+  position: relative
+}
+
+.changeColor {
+  display:inline-block;
+  position: relative;
+  border: solid black 1px;
   height: 20px;
-  outline: 2px solid black;
+  width: 20px;
+  margin: 0;
+  background: white
 }
 
 .canvasDiv {
@@ -19,7 +33,6 @@ h1 {
 	margin: auto;
 	height:400px;
 	width:400px;
-	padding: 0;
 }
 
 .canvas {

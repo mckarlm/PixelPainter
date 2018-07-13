@@ -16,12 +16,12 @@ var pixelPainter = (function (width, height){
   paletteDiv.className = 'paletteDiv';
   grid.appendChild(paletteDiv);
   
-  let paintHeight = 20;
-  let paintWidth = 20;
+  let paintHeight = 10;
+  let paintWidth = 10;
   
   function makePalette(){
-    for (let k=0; k<paintHeight; i++){
-      for (let l=0; l<paintWidth; i++){
+    for (let k=0; k<paintHeight; k++){
+      for (let l=0; l<paintWidth; l++){
         let paintCell = document.createElement('div');
         paintCell.className = 'changeColor'
         paletteDiv.appendChild(paintCell);
@@ -30,7 +30,22 @@ var pixelPainter = (function (width, height){
   }
   makePalette();
 
+  
+  let clearCanvas = document.createElement('button');
+  clearCanvas.className = 'clearButton';
+  clearCanvas.innerHTML = 'Reset Canvas';
+  clearCanvas.addEventListener('click', clearCanvasFunc);
+  paletteDiv.appendChild(clearCanvas);
+
+  
+  function clearCanvasFunc(event){
+    const cell = event.target;
+    document.querySelectorAll(cell).style.backgroundColor = 'white'
+  }
+  
+
 /*
+//?????//
   for (let k=0; k<5; k++){
     var makePalette = document.createElement('div');
     makePalette.className = 'palette';
@@ -51,6 +66,6 @@ var pixelPainter = (function (width, height){
     }
   }
 
-})(10, 10)
+})(8, 8)
 
 //media queries//
